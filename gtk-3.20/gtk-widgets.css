@@ -51,14 +51,16 @@ button {
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
 
     border: 1px solid transparent;
-    border-radius: 8px;
+    /*border-radius: 8px;
     border-image-source: -gtk-scaled(url("assets/button.png"),
-                                     url("assets/button@2.png"));
+                                     url("assets/button@2.png"));*/
 
     /* all button border images have the same size and are sliced in the same way */
-    border-image-width: 10px 12px 10px 12px;
+    /*border-image-width: 10px 12px 10px 12px;
     border-image-slice: 10 12 10 12;
-    border-image-repeat: stretch;
+    border-image-repeat: stretch;*/
+    border-radius: 1px;
+    border-color: @dark_bg_color;
 }
 
 button.flat {
@@ -92,8 +94,8 @@ button.destructive-action {
 button:backdrop {
     background-image: none;
     background-color: @bg_color;
-    border-image-source: -gtk-scaled(url("assets/backdrop-button.png"),
-                                     url("assets/backdrop-button@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button.png"),
+                                     url("assets/backdrop-button@2.png"));*/
 
     color: @backdrop_fg_color;
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
@@ -112,8 +114,10 @@ button.destructive-action:backdrop {
 }
 
 button:focus {
-    border-image-source: -gtk-scaled(url("assets/button-focused.png"),
-                                     url("assets/button-focused@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-focused.png"),
+                                     url("assets/button-focused@2.png"));*/
+    border-radius: 1px;
+    border-color: @dark_fg_color;
 }
 
 button:hover {
@@ -121,20 +125,26 @@ button:hover {
                                      from (shade (@button_bg_color, 1.12)),
                                      color-stop (0.5, @button_bg_color),
                                      to (shade (@button_bg_color, 0.96)));
-    border-image-source: -gtk-scaled(url("assets/button-hover.png"),
-                                     url("assets/button-hover@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-hover.png"),
+                                     url("assets/button-hover@2.png"));*/
+    border-radius: 1px;
+    border-color: @dark_fg_color;
 }
 
 button:hover:backdrop {
     background-image: none;
     background-color: shade (@bg_color, 1.04);
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-hover.png"),
-                                     url("assets/backdrop-button-hover@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button-hover.png"),
+                                     url("assets/backdrop-button-hover@2.png"));*/
+    border-radius: 1px;
+    border-color: @dark_fg_color;
 }
 
 button:hover:focus {
-    border-image-source: -gtk-scaled(url("assets/button-focused-hover.png"),
-                                     url("assets/button-focused-hover@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-focused-hover.png"),
+                                     url("assets/button-focused-hover@2.png"));*/
+    border-radius: 1px;
+    border-color: mix (@dark_fg_color, @fg_color, 0.5);
 }
 
 button.destructive-action:hover {
@@ -154,16 +164,18 @@ button:disabled {
     background-color: mix (#ebebeb, @bg_color, 0.5);
 
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
-    border-image-source: -gtk-scaled(url("assets/button-disabled.png"),
-                                     url("assets/button-disabled@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-disabled.png"),
+                                     url("assets/button-disabled@2.png"));*/
+    color: @dark_fg_color;
 }
 
 button:disabled:backdrop {
     background-color: #ebebeb;
 
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-disabled.png"),
-                                     url("assets/backdrop-button-disabled@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button-disabled.png"),
+                                     url("assets/backdrop-button-disabled@2.png"));*/
+    color: @dark_fg_color;
 }
 
 button.flat:disabled,
