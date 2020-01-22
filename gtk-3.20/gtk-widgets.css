@@ -188,13 +188,13 @@ button:checked {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#cecece),
                                      to (#e8e8e8));
-    border-image-source: -gtk-scaled(url("assets/button-active.png"),
-                                     url("assets/button-active@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-active.png"),
+                                     url("assets/button-active@2.png"));*/
 }
 
 button:checked:focus {
-    border-image-source: -gtk-scaled(url("assets/button-active-focused.png"),
-                                     url("assets/button-active-focused@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-active-focused.png"),
+                                     url("assets/button-active-focused@2.png"));*/
 }
 
 button.destructive-action:checked {
@@ -211,13 +211,13 @@ button:active {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#dcdcdc),
                                      to (#f3f3f3));
-    border-image-source: -gtk-scaled(url("assets/button-active-hover.png"),
-                                     url("assets/button-active-hover@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-active-hover.png"),
+                                     url("assets/button-active-hover@2.png"));*/
 }
 
 button:active:focus {
-    border-image-source: -gtk-scaled(url("assets/button-active-focused-hover.png"),
-                                     url("assets/button-active-focused-hover@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-active-focused-hover.png"),
+                                     url("assets/button-active-focused-hover@2.png"));*/
 }
 
 button.destructive-action:active {
@@ -231,26 +231,26 @@ button:active:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#e3e3e3),
                                      to (#f3f3f3));
-    border-image-source: -gtk-scaled(url("assets/button-active-disabled.png"),
-                                     url("assets/button-active-disabled@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-active-disabled.png"),
+                                     url("assets/button-active-disabled@2.png"));*/
 }
 
 button:checked:backdrop {
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-active.png"),
-                                     url("assets/backdrop-button-active@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button-active.png"),
+                                     url("assets/backdrop-button-active@2.png"));*/
 }
 
 button:active:backdrop {
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-active-hover.png"),
-                                     url("assets/backdrop-button-active-hover@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button-active-hover.png"),
+                                     url("assets/backdrop-button-active-hover@2.png"));*/
 }
 
 button:checked:disabled:backdrop {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (mix (#e3e3e3, @bg_color, 0.5)),
                                      to (mix (#f3f3f3, @bg_color, 0.5)));
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-active-disabled.png"),
-                                     url("assets/backdrop-button-active-disabled@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button-active-disabled.png"),
+                                     url("assets/backdrop-button-active-disabled@2.png"));*/
 }
 
 /*
@@ -2983,8 +2983,8 @@ headerbar button,
 headerbar button:disabled,
 .primary-toolbar button.flat:hover {
     background: transparent;
-    border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
-                                     url("assets/button-toolbar@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
+                                     url("assets/button-toolbar@2.png"));*/
     padding: 9px;
     color: @dark_fg_color;
 }
@@ -3002,16 +3002,16 @@ headerbar button:disabled * {
 
 .primary-toolbar button:focus,
 headerbar button:focus {
-    border-image-source: -gtk-scaled(url("assets/button-toolbar-focused.png"),
-                                     url("assets/button-toolbar-focused@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-toolbar-focused.png"),
+                                     url("assets/button-toolbar-focused@2.png"));*/
 }
 
 .primary-toolbar button:active,
 .primary-toolbar button:checked,
 headerbar button:active,
 headerbar button:checked {
-    border-image-source: -gtk-scaled(url("assets/button-toolbar-active.png"),
-                                     url("assets/button-toolbar-active@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-toolbar-active.png"),
+                                     url("assets/button-toolbar-active@2.png"));*/
 }
 
 .primary-toolbar button:active:focus,
@@ -3019,8 +3019,8 @@ headerbar button:checked {
 headerbar button:active:focus,
 headerbar button:checked:focus,
 headerbar button:hover:focus {
-    border-image-source: -gtk-scaled(url("assets/button-toolbar-active-focused.png"),
-                                     url("assets/button-toolbar-active-focused@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-toolbar-active-focused.png"),
+                                     url("assets/button-toolbar-active-focused@2.png"));*/
 }
 
 .primary-toolbar button:backdrop,
@@ -3029,8 +3029,8 @@ headerbar button:disabled:backdrop,
 headerbar button:checked:backdrop {
     color: @backdrop_dark_fg_color;
     background-color: transparent;
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
-                                     url("assets/backdrop-button-toolbar@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
+                                     url("assets/backdrop-button-toolbar@2.png"));*/
 }
 
 .primary-toolbar button:backdrop,
@@ -3047,8 +3047,8 @@ headerbar button:checked:backdrop * {
 .primary-toolbar button:active:backdrop,
 .primary-toolbar button:checked:backdrop,
 headerbar button:active:backdrop {
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar-active.png"),
-                                     url("assets/backdrop-button-toolbar-active@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar-active.png"),
+                                     url("assets/backdrop-button-toolbar-active@2.png"));*/
 }
 
 .primary-toolbar button:hover,
@@ -3061,8 +3061,8 @@ headerbar button:backdrop:checked {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.2)),
                                      to (shade (@dark_bg_color, 1.1)));
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
-                                     url("assets/backdrop-button-toolbar@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
+                                     url("assets/backdrop-button-toolbar@2.png"));*/
 }
 
 headerbar .linked button.text-button:checked {
@@ -3117,8 +3117,8 @@ headerbar button:disabled {
 
 .primary-toolbar button:disabled,
 headerbar button:disabled {
-    border-image-source: -gtk-scaled(url("assets/button-toolbar-disabled.png"),
-                                     url("assets/button-toolbar-disabled@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-toolbar-disabled.png"),
+                                     url("assets/button-toolbar-disabled@2.png"));*/
 }
 
 .primary-toolbar button.flat:disabled {
@@ -3131,8 +3131,8 @@ headerbar button:checked:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.94)),
                                      to (shade (@dark_bg_color, 1.02)));
-    border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
-                                     url("assets/button-toolbar@2.png"));
+    /*border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
+                                     url("assets/button-toolbar@2.png"));*/
 }
 
 /* Suggested action */
